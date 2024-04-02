@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="music-player">
+        <div class="controls">
+            <button id="play-pause-btn">&#9658;</button>
+            <button id="prev-btn">&laquo;</button>
+            <button id="next-btn">&raquo;</button>
+        </div>
+        <div class="song-info">
+            <span id="song-title">Song Title</span>
+            <span id="artist">Artist</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
